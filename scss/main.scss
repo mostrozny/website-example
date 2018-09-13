@@ -6,6 +6,7 @@
   font-size: 16px;
   //overflow-x: hidden;
 }
+
 .containerMain {
   margin: 0 auto;
   max-width: 1024px;
@@ -55,11 +56,11 @@ h3 {
 .gallery {
   width: 100%;
   .swiper-container {
-   width: 100%;
+    width: 90%;
     border-radius: 20px;
     .swiper-slide {
       img {
-       width: 100%;
+        width: 100%;
         min-height: 400px;
         // width: 100vw;
         //  height: 100vh;
@@ -88,7 +89,6 @@ footer {
   align-items: center;
   padding: 5px;
 }
-
 
 .menu {
   z-index: 10;
