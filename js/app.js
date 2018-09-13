@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Helloo!");
 
-    $(document).ready(function () {
-        var mySwiper = new Swiper ('.swiper-container', {
+    //swajper
+    $(document).ready(() => {
+        const mySwiper = new Swiper('.swiper-container', {
             // Optional parameters
             direction: 'horizontal',
             loop: true,
@@ -13,6 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 rotate: 30,
                 slideShadows: false,
             },
-        })
+        });
+    });
+
+    //hamberger;
+    $( document ).ready(() => {
+        $( ".menu" ).hide();
+        $( ".hamburger" ).click(() => {
+            $( ".menu" ).slideToggle( "slow", () => {
+            });
+        });
     });
 });
