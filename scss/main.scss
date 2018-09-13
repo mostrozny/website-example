@@ -17,6 +17,7 @@
 }
 
 header {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -79,7 +80,9 @@ hr {
   font-size: 0.8em;
   width: 100%;
   background: #f1f1f1;
+  opacity: 0.95;
   position: absolute;
+  top: 100%;
   text-align: center;
   font-size: 12px;
   ul {
@@ -91,12 +94,14 @@ hr {
   li {
     display: block;
     padding: 15px 0 15px 0;
-    border-bottom: #dddddd 1px solid;
+    border-bottom: #dddddd 2px solid;
+    border-radius: 10px;
     &:hover {
       display: block;
       background: #ffffff;
       padding: 15px 0 15px 0;
-      border-bottom: #dddddd 1px solid;
+      border-bottom: #dddddd 2px solid;
+      border-radius: 10px;
     }
   }
   ul li a {
