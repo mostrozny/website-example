@@ -26,5 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
             $(".menu").slideToggle("slow", () => {
             });
         });
+        $("a li").click(() => {
+            $(".menu").slideToggle("slow", () => {
+            });
+        })
     });
 });

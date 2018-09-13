@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n\n    console.log(\"Helloo!\");\n\n    //swajper\n    $(document).ready(function () {\n        var mySwiper = new Swiper('.swiper-container', {\n            // Optional parameters\n            direction: 'horizontal',\n            loop: true,\n            autoplay: {\n                delay: 5000\n            },\n            flipEffect: {\n                rotate: 30,\n                slideShadows: false\n            }\n        });\n    });\n\n    //hamberger;\n    $(document).ready(function () {\n        $(\".menu\").hide();\n        $(\".hamburger\").click(function () {\n            $(\".menu\").slideToggle(\"slow\", function () {});\n        });\n    });\n});\n\n//# sourceURL=webpack:///./js/app.js?");
+eval("\n\ndocument.addEventListener('DOMContentLoaded', function () {\n\n    console.log(\"Helloo!\");\n\n    //swajper\n    $(document).ready(function () {\n        var mySwiper = new Swiper('.swiper-container', {\n            // Optional parameters\n            direction: 'horizontal',\n            loop: true,\n            autoplay: {\n                delay: 5000\n            },\n            flipEffect: {\n                rotate: 30,\n                slideShadows: false\n            }\n        });\n    });\n\n    //hamberger;\n    $(document).ready(function () {\n        $(\".menu\").hide();\n        $(\".hamburger\").click(function () {\n            $(\".menu\").slideToggle(\"slow\", function () {});\n        });\n        $(\"a li\").click(function () {\n            $(\".menu\").slideToggle(\"slow\", function () {});\n        });\n    });\n});\n\n//# sourceURL=webpack:///./js/app.js?");
 
 /***/ })
 

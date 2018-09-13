@@ -9,11 +9,13 @@
 .containerMain {
   margin: 0 auto;
   max-width: 1024px;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #ededed;
+
 }
 
 header {
@@ -51,14 +53,14 @@ h3 {
 }
 
 .gallery {
-
+  width: 100%;
   .swiper-container {
-    width: 100vw;
+   width: 100%;
     border-radius: 20px;
     .swiper-slide {
       img {
-        width: 100vw;
-        min-height: 500px;
+       width: 100%;
+        min-height: 400px;
         // width: 100vw;
         //  height: 100vh;
         object-fit: cover;
@@ -69,14 +71,23 @@ h3 {
 
 hr {
   height: 5px;
-  width: 80vw;
+  width: 100%;
   border-style: none;
   border-radius: 4px;
   background-color: #1A1A1A;
   margin-bottom: 15px;
 }
 
-
+footer {
+  width: 100%;
+  background-color: #1A1A1A;
+  font-size: 0.7rem;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+}
 
 
 .menu {
