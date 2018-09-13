@@ -4,11 +4,16 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+  //overflow-x: hidden;
 }
-
-.container {
+.containerMain {
   margin: 0 auto;
   max-width: 1024px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
 
 header {
@@ -29,10 +34,18 @@ article {
     text-align: center;
     font-style: italic;
   }
+  .partners {
+    text-align: center;
+  }
+}
+
+h3 {
+  padding-bottom: 15px;
+  font-size: 1.3rem;
 }
 
 .gallery {
-  padding: 20px;
+
   .swiper-container {
     width: 100vw;
     border-radius: 20px;
@@ -47,6 +60,18 @@ article {
     }
   }
 }
+
+hr {
+  height: 5px;
+  width: 80vw;
+  border-style: none;
+  border-radius: 4px;
+  background-color: royalblue;
+  margin: 15px;
+}
+
+
+
 
 .menu {
   z-index: 10;
