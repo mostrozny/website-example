@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     //hamberger;
-    $( document ).ready(() => {
-        $( ".menu" ).hide();
-        $( ".hamburger" ).click(() => {
-            $( ".menu" ).slideToggle( "slow", () => {
+    $(document).ready(() => {
+        $(".menu").hide();
+        $(".hamburger").click(() => {
+            $(".menu").slideToggle("slow", () => {
             });
         });
     });
