@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   //overflow-x: hidden;
 }
 .containerMain {
@@ -57,7 +57,7 @@ h3 {
     border-radius: 20px;
     .swiper-slide {
       img {
-        width: 100%;
+        width: 100vw;
         min-height: 500px;
         // width: 100vw;
         //  height: 100vh;
@@ -73,7 +73,7 @@ hr {
   border-style: none;
   border-radius: 4px;
   background-color: #1A1A1A;
-  margin: 15px;
+  margin-bottom: 15px;
 }
 
 
@@ -137,7 +137,7 @@ hr {
   padding: 5px 15px 0px 15px;
   color: white;
   border: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
   outline: none;
