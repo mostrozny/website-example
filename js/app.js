@@ -5,7 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //swajper
     $(document).ready(() => {
-        const mySwiper = new Swiper('.swiper-container', {
+        const swipers = $(".swiper-container");
+
+        const mySwiper = new Swiper(swipers[0], {
             // Optional parameters
             direction: 'horizontal',
             loop: true,
@@ -24,6 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
             renderBullet: function (index, className) {
                 return '<span class="' + className + '">' + (index + 1) + '</span>';
             }
+        });
+        const swiper2 = new Swiper(swipers[1], {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            loop: true,
+
         });
     });
 
