@@ -52,8 +52,19 @@ article {
   }
   .partners {
     text-align: center;
+    span {
+      margin-top: 15px;
+      padding: 10px;
+    }
   }
 }
+
+.textIntro {
+  line-height: 22px;
+  padding: 15px;
+  font-size: 1.15rem;
+}
+
 
 h3 {
   padding-bottom: 15px;
@@ -83,10 +94,19 @@ h3 {
   .logo {
     a {
       text-decoration: none;
-      color: black;
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+    .fischerLogo {
+      text-decoration: none;
+      color: #C60076;
+      font-size: 30px;
+      font-weight: 700;
+      font-family: Verdana, Serif;
+    }
+    i {
+      text-decoration: none;
     }
   }
 }
@@ -98,13 +118,16 @@ h3 {
 }
 
 hr {
+  display: block;
   height: 5px;
-  width: 100%;
+  width: 200px;
   border-style: none;
   border-radius: 4px;
   background-color: #1A1A1A;
-  margin-bottom: 15px;
+  margin: 10px auto;
 }
+
+
 
 footer {
   width: 100%;
