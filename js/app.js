@@ -3,6 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log("Helloo!");
 
+
+
+    /*function getPairs (arrays) {
+        const result = [];
+            for (let i=0; i<arrays.length; i++) {
+               const first = arrays[i];
+               if (arrays.indexOf(first, i+1) !== -1) {
+                   result.push(true);
+               } else {
+                   result.push(false);
+               }
+            }
+        return result;
+    }
+    const arr = [12, 12, 13, 15, 16, 20, "a", "b", "a"];
+    console.log(arr);
+    console.log(getPairs(arr));*/
+
+
     //swajper
     $(document).ready(() => {
         const swipers = $(".swiper-container");
