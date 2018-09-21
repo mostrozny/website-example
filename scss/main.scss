@@ -10,7 +10,6 @@
 .containerMain {
   margin: 0 auto;
   max-width: 1024px;
-  width: 100vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -27,6 +26,7 @@
 
 header {
   .containerMain {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
