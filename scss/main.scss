@@ -13,9 +13,8 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  background-color: #ededed;
+//  background-color: #ededed;
 
 }
 
@@ -27,16 +26,48 @@
 }
 
 header {
+  .containerMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   position: relative;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #1A1A1A;
   color: white;
+  .menuWideScreen {
+    display: none;
+  }
   h1 {
     padding: 10px;
     font-size: 1.4rem;
     text-align: center;
+  }
+  @media screen and (min-width: 920px) {
+    .containerMain h1 {
+        text-align: start;
+    }
+    .menuWideScreen {
+      display: flex;
+      ul {
+        list-style: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          padding-left: 10px;
+          li {
+            text-decoration: none;
+            color: white;
+            height: 100%;
+          }
+        }
+      }
+
+    }
   }
 }
 
@@ -52,6 +83,8 @@ article {
   }
   .partners {
     text-align: center;
+    align-items: center;
+    justify-items: center;
     span {
       margin-top: 15px;
       padding: 10px;
@@ -59,10 +92,13 @@ article {
   }
 }
 
-.textIntro {
+.containerMain .partners .textIntro {
   line-height: 22px;
   padding: 15px;
   font-size: 1.15rem;
+  @media screen and (min-width: 920px) {
+    width: 600px;
+  }
 }
 
 
@@ -148,7 +184,9 @@ footer {
   color: white;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
+  justify-items: flex-end;
+  text-align: end;
   padding: 5px;
 }
 
@@ -214,4 +252,7 @@ footer {
   font-weight: bold;
   cursor: pointer;
   outline: none;
+  @media screen and (min-width: 920px) {
+    display: none;
+  }
 }
