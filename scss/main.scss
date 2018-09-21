@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-//  background-color: #ededed;
+  //  background-color: #ededed;
 
 }
 
@@ -48,7 +48,7 @@ header {
   }
   @media screen and (min-width: 920px) {
     .containerMain h1 {
-        text-align: start;
+      text-align: start;
     }
     .menuWideScreen {
       display: flex;
@@ -59,10 +59,14 @@ header {
         align-items: center;
         a {
           padding-left: 10px;
+          text-decoration: none;
           li {
-            text-decoration: none;
+            font-size: 1.2rem;
             color: white;
             height: 100%;
+            &:hover {
+              animation: color-change 1s infinite;
+            }
           }
         }
       }
@@ -101,29 +105,27 @@ article {
   }
 }
 
-
 h3 {
   padding-bottom: 15px;
   font-size: 1.3rem;
 }
 
-
-  .gallery {
-    width: 100%;
-    .swiper-container {
-      width: 90%;
-      border-radius: 20px;
-      .swiper-slide {
-        img {
-          width: 100%;
-          min-height: 400px;
-          // width: 100vw;
-          //  height: 100vh;
-          object-fit: cover;
-        }
+.gallery {
+  width: 100%;
+  .swiper-container {
+    width: 90%;
+    border-radius: 20px;
+    .swiper-slide {
+      img {
+        width: 100%;
+        min-height: 400px;
+        // width: 100vw;
+        //  height: 100vh;
+        object-fit: cover;
       }
     }
   }
+}
 
 .partnerCompany {
   padding: 15px;
@@ -174,8 +176,6 @@ hr {
   background-color: #1A1A1A;
   margin: 10px auto;
 }
-
-
 
 footer {
   width: 100%;
@@ -255,4 +255,10 @@ footer {
   @media screen and (min-width: 920px) {
     display: none;
   }
+}
+
+@keyframes color-change {
+  0% { color: white; }
+  50% { color: deepskyblue; }
+  100% { color: white; }
 }
